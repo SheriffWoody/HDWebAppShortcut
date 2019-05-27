@@ -1,0 +1,21 @@
+PODS:
+  - HDWebAppShortcut (0.0.1):
+    - HDWebAppShortcut/Actions (= 0.0.1)
+    - HDWebAppShortcut/Core (= 0.0.1)
+  - HDWebAppShortcut/Actions (0.0.1):
+    - HDWebAppShortcut/Core
+  - HDWebAppShortcut/Core (0.0.1)
+
+DEPENDENCIES:
+  - HDWebAppShortcut (from `../`)
+
+EXTERNAL SOURCES:
+  HDWebAppShortcut:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HDWebAppShortcut: 97a21190a98f4a7fa18393a3b3733f62647d8bb6
+
+PODFILE CHECKSUM: 5adcec17ff1888b72e59389400af1905ee31606f
+
+COCOAPODS: 1.6.1
