@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HDWebAppShortcut'
-  s.version          = '0.0.2'
+  s.version          = '0.0.20'
   s.summary          = 'A short description of HDWebAppShortcut.'
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
@@ -11,7 +11,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Woody' => 'iwoody721@gmail.com' }
-  s.source           = { :git => 'git@github.com:SheriffWoody/HDWebAppShortcut.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/SheriffWoody/HDWebAppShortcut.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
   s.dependency 'CocoaHTTPServer'
