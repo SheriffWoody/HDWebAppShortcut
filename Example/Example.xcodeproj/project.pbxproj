@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4B6128E51A2E5283CDDB1C4C /* libPods-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 081302F99B0E455512A61A85 /* libPods-Example.a */; };
 		BE926436BE91C815E534DF9F /* libPods-ExampleUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CF4B5C7E9D834AB14D5539 /* libPods-ExampleUITests.a */; };
+		EF368627229BF66A00681F10 /* content.html in Resources */ = {isa = PBXBuildFile; fileRef = EF368626229BF66A00681F10 /* content.html */; };
 		EFC9C16F218154EB00B77F12 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC9C16E218154EB00B77F12 /* AppDelegate.m */; };
 		EFC9C172218154EB00B77F12 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC9C171218154EB00B77F12 /* ViewController.m */; };
 		EFC9C175218154EB00B77F12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC9C173218154EB00B77F12 /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		4EFFEFCB3C540E814753771E /* libPods-ExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55FFEB7785A13C06C4E8065C /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		7B4246B74D3559A241342D43 /* Pods-ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleTests.release.xcconfig"; path = "Target Support Files/Pods-ExampleTests/Pods-ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		EF368626229BF66A00681F10 /* content.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = content.html; sourceTree = "<group>"; };
 		EFC9C16A218154EB00B77F12 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC9C16D218154EB00B77F12 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EFC9C16E218154EB00B77F12 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -103,7 +105,6 @@
 				4DAD64A28CDC337CB1F080F7 /* Pods-ExampleUITests.debug.xcconfig */,
 				1F7C13E38D7CCDC6A893C8CE /* Pods-ExampleUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -142,6 +143,7 @@
 		EFC9C16C218154EB00B77F12 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				EF368626229BF66A00681F10 /* content.html */,
 				EFC9C16D218154EB00B77F12 /* AppDelegate.h */,
 				EFC9C16E218154EB00B77F12 /* AppDelegate.m */,
 				EFC9C170218154EB00B77F12 /* ViewController.h */,
@@ -184,6 +186,7 @@
 				EFC9C166218154EB00B77F12 /* Sources */,
 				EFC9C167218154EB00B77F12 /* Frameworks */,
 				EFC9C168218154EB00B77F12 /* Resources */,
+				1EA6087352320F6F1A123C81 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -281,6 +284,7 @@
 			files = (
 				EFC9C17A218154EC00B77F12 /* LaunchScreen.storyboard in Resources */,
 				EFC9C177218154EC00B77F12 /* Assets.xcassets in Resources */,
+				EF368627229BF66A00681F10 /* content.html in Resources */,
 				EFC9C175218154EB00B77F12 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +306,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1EA6087352320F6F1A123C81 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/HDWebAppShortcut/HDWebAppShortcut.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HDWebAppShortcut.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		65315545799BDA3B1A7FDD3F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

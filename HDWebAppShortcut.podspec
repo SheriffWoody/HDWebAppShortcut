@@ -14,13 +14,12 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'git@github.com:SheriffWoody/HDWebAppShortcut.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
+  s.dependency 'CocoaHTTPServer'
+  s.resource_bundles = {
+   'HDWebAppShortcut' => ['HDWebAppShortcut/Resource/*']
+  }
 
   s.subspec 'Core' do |ss|
       ss.source_files = "HDWebAppShortcut/Core/*.{h,m}"
-  end
-  
-  s.subspec 'Actions' do |ss|
-      ss.source_files = "HDWebAppShortcut/Actions/*.{h,m}"
-      ss.dependency "HDWebAppShortcut/Core"
   end
 end

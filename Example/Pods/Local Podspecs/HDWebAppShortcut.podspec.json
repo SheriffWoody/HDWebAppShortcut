@@ -19,19 +19,20 @@
     "ios": "8.0"
   },
   "requires_arc": true,
+  "dependencies": {
+    "CocoaHTTPServer": [
+
+    ]
+  },
+  "resource_bundles": {
+    "HDWebAppShortcut": [
+      "HDWebAppShortcut/Resource/*"
+    ]
+  },
   "subspecs": [
     {
       "name": "Core",
       "source_files": "HDWebAppShortcut/Core/*.{h,m}"
-    },
-    {
-      "name": "Actions",
-      "source_files": "HDWebAppShortcut/Actions/*.{h,m}",
-      "dependencies": {
-        "HDWebAppShortcut/Core": [
-
-        ]
-      }
     }
   ]
 }

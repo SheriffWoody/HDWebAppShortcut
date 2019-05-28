@@ -14,8 +14,8 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "40A19DB4CBDFF855CFB83AAA8AFB9761"
-               BuildableName = "HDWebAppShortcut"
+               BlueprintIdentifier = "2F1D0C898D91A93E59CDDE9623F6F5F5"
+               BuildableName = "libHDWebAppShortcut.a"
                BlueprintName = "HDWebAppShortcut"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

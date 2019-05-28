@@ -1,20 +1,35 @@
 PODS:
+  - CocoaAsyncSocket (7.6.3)
+  - CocoaHTTPServer (2.3):
+    - CocoaAsyncSocket
+    - CocoaLumberjack
+  - CocoaLumberjack (3.5.3):
+    - CocoaLumberjack/Core (= 3.5.3)
+  - CocoaLumberjack/Core (3.5.3)
   - HDWebAppShortcut (0.0.1):
-    - HDWebAppShortcut/Actions (= 0.0.1)
+    - CocoaHTTPServer
     - HDWebAppShortcut/Core (= 0.0.1)
-  - HDWebAppShortcut/Actions (0.0.1):
-    - HDWebAppShortcut/Core
-  - HDWebAppShortcut/Core (0.0.1)
+  - HDWebAppShortcut/Core (0.0.1):
+    - CocoaHTTPServer
 
 DEPENDENCIES:
   - HDWebAppShortcut (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CocoaAsyncSocket
+    - CocoaHTTPServer
+    - CocoaLumberjack
 
 EXTERNAL SOURCES:
   HDWebAppShortcut:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HDWebAppShortcut: 97a21190a98f4a7fa18393a3b3733f62647d8bb6
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  CocoaHTTPServer: 5624681fc3473d43b18202f635f9b3abb013b530
+  CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
+  HDWebAppShortcut: fa41f8c75c307b2406e37e20414192d645d47835
 
 PODFILE CHECKSUM: 5adcec17ff1888b72e59389400af1905ee31606f
 

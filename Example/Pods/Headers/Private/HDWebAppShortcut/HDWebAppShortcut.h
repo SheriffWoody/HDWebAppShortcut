@@ -1,0 +1,1 @@
+../../../../../HDWebAppShortcut/Core/HDWebAppShortcut.h
