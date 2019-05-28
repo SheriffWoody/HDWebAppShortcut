@@ -14,4 +14,5 @@ git commit -m $VersionString
 git tag ${VersionString}
 git push origin master --tags
 #发布
-pod repo push master $podspec --allow-warnings --use-libraries --verbose
+#pod repo push master $podspec --allow-warnings --use-libraries --verbose
+pod trunk push master $podspec --allow-warnings --use-libraries --verbose
