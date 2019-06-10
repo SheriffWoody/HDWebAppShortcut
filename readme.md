@@ -15,6 +15,10 @@ it, simply add the following line to your Podfile:
 pod 'HDWebAppShortcut'
 ```
 
+## Introduce
+
+[相关文档](https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html#//apple_ref/doc/uid/TP40002051-CH3-SW4)
+
 ## Author
 
 Woody, iwoody721@gmail.com
