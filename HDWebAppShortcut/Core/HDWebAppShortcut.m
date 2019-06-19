@@ -65,11 +65,9 @@ static NSString *HDWebPath = @"HDWebPath";
 - (void)startServer{
     NSError *error;
     if([self.mHttpServer start:&error]){
-        NSLog(@"Started HTTP Server on port %hu", [self.mHttpServer listeningPort]);
-        /*服务启动成功后，访问网址*/
         NSString *localAddress = [NSString stringWithFormat:@"http://127.0.0.1:%hu",[self.mHttpServer listeningPort]];
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:localAddress]];
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self.mHttpServer stop];
         });
     }else{

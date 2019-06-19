@@ -26,7 +26,7 @@
 }
 
 - (void)buttonAction{
-    NSString *htmlPath = [[NSBundle mainBundle]pathForResource:@"content" ofType:@"html"];
+    NSString *htmlPath = [[NSBundle mainBundle]pathForResource:@"content1" ofType:@"html"];
     NSError *error;
     NSString *htmlStr = [NSString stringWithContentsOfFile:htmlPath encoding:NSUTF8StringEncoding error:&error];
     [HDWebAppShortcut createShortcut:[UIImage imageNamed:@"icon"] launchImage:[UIImage imageNamed:@"launch"] appTitle:@"测试桌面" urlScheme:@"HD://home/refresh" sourceHtml:htmlStr];

@@ -10,6 +10,7 @@
 		4B6128E51A2E5283CDDB1C4C /* libPods-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 081302F99B0E455512A61A85 /* libPods-Example.a */; };
 		BE926436BE91C815E534DF9F /* libPods-ExampleUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CF4B5C7E9D834AB14D5539 /* libPods-ExampleUITests.a */; };
 		EF368627229BF66A00681F10 /* content.html in Resources */ = {isa = PBXBuildFile; fileRef = EF368626229BF66A00681F10 /* content.html */; };
+		EF50A2A922A12111006E5DC9 /* content1.html in Resources */ = {isa = PBXBuildFile; fileRef = EF50A2A822A12111006E5DC9 /* content1.html */; };
 		EFC9C16F218154EB00B77F12 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC9C16E218154EB00B77F12 /* AppDelegate.m */; };
 		EFC9C172218154EB00B77F12 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC9C171218154EB00B77F12 /* ViewController.m */; };
 		EFC9C175218154EB00B77F12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC9C173218154EB00B77F12 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		55FFEB7785A13C06C4E8065C /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		7B4246B74D3559A241342D43 /* Pods-ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleTests.release.xcconfig"; path = "Target Support Files/Pods-ExampleTests/Pods-ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		EF368626229BF66A00681F10 /* content.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = content.html; sourceTree = "<group>"; };
+		EF50A2A822A12111006E5DC9 /* content1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = content1.html; sourceTree = "<group>"; };
 		EFC9C16A218154EB00B77F12 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC9C16D218154EB00B77F12 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EFC9C16E218154EB00B77F12 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		EFC9C16C218154EB00B77F12 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				EF50A2A822A12111006E5DC9 /* content1.html */,
 				EF368626229BF66A00681F10 /* content.html */,
 				EFC9C16D218154EB00B77F12 /* AppDelegate.h */,
 				EFC9C16E218154EB00B77F12 /* AppDelegate.m */,
@@ -282,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF50A2A922A12111006E5DC9 /* content1.html in Resources */,
 				EFC9C17A218154EC00B77F12 /* LaunchScreen.storyboard in Resources */,
 				EFC9C177218154EC00B77F12 /* Assets.xcassets in Resources */,
 				EF368627229BF66A00681F10 /* content.html in Resources */,
