@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2F1D0C898D91A93E59CDDE9623F6F5F5"
+               BlueprintIdentifier = "8B9ADC81152181C7545D481324188725"
                BuildableName = "libHDWebAppShortcut.a"
                BlueprintName = "HDWebAppShortcut"
                ReferencedContainer = "container:Pods.xcodeproj">

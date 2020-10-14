@@ -1,6 +1,6 @@
 {
   "name": "HDWebAppShortcut",
-  "version": "0.0.1",
+  "version": "0.0.21",
   "summary": "A short description of HDWebAppShortcut.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "http://github.com/SheriffWoody/HDWebAppShortcut",
@@ -12,8 +12,8 @@
     "Woody": "iwoody721@gmail.com"
   },
   "source": {
-    "git": "git@github.com:SheriffWoody/HDWebAppShortcut.git",
-    "tag": "0.0.1"
+    "git": "https://github.com/SheriffWoody/HDWebAppShortcut.git",
+    "tag": "0.0.21"
   },
   "platforms": {
     "ios": "8.0"

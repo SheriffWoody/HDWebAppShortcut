@@ -42,6 +42,11 @@ static NSString *HDWebPath = @"HDWebPath";
     NSData *contentData = [contentHTML dataUsingEncoding:NSUTF8StringEncoding];
     contentHTML = [contentData base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
     NSString *dataURIString = [NSString stringWithFormat:@"0;data:text/html;charset=utf-8;base64,%@",contentHTML];
+    if (@available(iOS 14.0, *)) {
+        contentHTML = [contentHTML stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+        contentHTML = [contentHTML stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+        dataURIString = contentHTML;
+    }
     NSString *indexHtmlString = [instance replaceIndexHtmlWithBase64ContentString:dataURIString];
     if ([instance writeHTMLToDocument:indexHtmlString]) {
         [instance startServer];
@@ -111,15 +116,11 @@ static NSString *HDWebPath = @"HDWebPath";
 - (NSString *)getIndexHTMLTempletPath{
     NSURL *associateBundleURL = [[NSBundle mainBundle] URLForResource:@"HDWebAppShortcut" withExtension:@"bundle"];
     NSBundle *bundle = [NSBundle bundleWithURL:associateBundleURL];
-    NSString *path = [[bundle resourcePath] stringByAppendingPathComponent:@"/index.html"];
-    return path;
-}
-
-- (NSString *)getContentHTMLTempletPath{
-    NSURL *associateBundleURL = [[NSBundle mainBundle] URLForResource:@"HDWebAppShortcut" withExtension:@"bundle"];
-    NSBundle *bundle = [NSBundle bundleWithURL:associateBundleURL];
-    NSString *path = [[bundle resourcePath] stringByAppendingPathComponent:@"/content.html"];
-    NSLog(@"%@",path);
+    NSString *html = @"/index.html";
+    if (@available(iOS 14.0, *)) {
+        html = @"/indexNew.html";
+    }
+    NSString *path = [[bundle resourcePath] stringByAppendingPathComponent:html];
     return path;
 }
 

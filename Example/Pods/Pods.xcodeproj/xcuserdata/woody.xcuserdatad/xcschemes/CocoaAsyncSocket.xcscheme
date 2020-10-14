@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2FF58AC2E08BF63C97452B604A574113"
+               BlueprintIdentifier = "6083682834ABE0AE7BD1CBF06CADD036"
                BuildableName = "libCocoaAsyncSocket.a"
                BlueprintName = "CocoaAsyncSocket"
                ReferencedContainer = "container:Pods.xcodeproj">

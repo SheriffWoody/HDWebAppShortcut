@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HDWebAppShortcut'
-  s.version          = '0.0.21'
+  s.version          = '0.0.22'
   s.summary          = 'A short description of HDWebAppShortcut.'
   s.description      = <<-DESC
 TODO: Add long description of the pod here.

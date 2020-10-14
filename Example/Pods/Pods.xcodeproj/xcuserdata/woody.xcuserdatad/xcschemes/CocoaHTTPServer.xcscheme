@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1A60EC7D25129D95085F440485E0DDD2"
+               BlueprintIdentifier = "ADF9F3B1BBEC7F642AA07171CF4B2509"
                BuildableName = "libCocoaHTTPServer.a"
                BlueprintName = "CocoaHTTPServer"
                ReferencedContainer = "container:Pods.xcodeproj">
