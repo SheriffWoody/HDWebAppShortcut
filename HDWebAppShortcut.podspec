@@ -10,7 +10,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'http://github.com/SheriffWoody/HDWebAppShortcut'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Woody' => 'iwoody721@gmail.com' }
+  s.author           = { 'Woody' => 'hudi721@foxmail.com' }
   s.source           = { :git => 'https://github.com/SheriffWoody/HDWebAppShortcut.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
